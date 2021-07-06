@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: helm-httpd-frontend
+  name: helm-httpd-frontend
+spec:
+  replicas: {{ .Values.replicas.replicas_test }}
+  selector:
+    matchLabels:
+      app: helm-httpd-frontend
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: helm-httpd-frontend
+    spec:
+      containers:
+      - image: httpd:2.4-alpineº
+        name: httpd
+        resources: {}
+status: {}
