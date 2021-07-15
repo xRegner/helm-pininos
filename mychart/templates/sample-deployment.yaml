@@ -18,7 +18,7 @@ spec:
         app: helm-httpd-frontend
     spec:
       containers:
-      - image: httpd:2.4-alpineº
+      - image: httpd:2.4-alpine
         name: httpd
         resources: {}
 status: {}
