@@ -15,7 +15,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: helm-httpd-frontend
+        app: httpd:2.4-alpinekokok
     spec:
       containers:
       - image: nginx
